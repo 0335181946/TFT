@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/TFT/static/css/main.633a2ebb.css",
+    "main.js": "/TFT/static/js/main.092d47c5.js",
+    "static/media/Roboto-Regular.ttf": "/TFT/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "index.html": "/TFT/index.html",
+    "main.633a2ebb.css.map": "/TFT/static/css/main.633a2ebb.css.map",
+    "main.092d47c5.js.map": "/TFT/static/js/main.092d47c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.633a2ebb.css",
+    "static/js/main.092d47c5.js"
+  ]
+}
