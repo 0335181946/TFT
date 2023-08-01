@@ -1,0 +1,516 @@
+.app {
+  padding: 5px 15px
+}
+
+.login_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login_title {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.login_group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.login_group label {
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+
+.login_group input {
+  height: 40px;
+  outline: none;
+  border: 1px solid black;
+  padding: 0 15px;
+}
+
+.login_btn {
+  width: max-content;
+  display: block;
+  margin: 30px auto 0 auto;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 3px black;
+  text-transform: uppercase;
+  transition: 0.5s all;
+}
+
+.home_row:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.home_logo {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.home_logout {
+  background-color: black;
+  color: yellow;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.home_logout::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.5s cubic-bezier(0, 0, 0.44, 1.1);
+}
+
+.home_logout:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.home_row:last-child {
+  display: flex;
+  padding: 10px 0;
+  min-height: calc(100vh - 60px);
+}
+
+.home_col:first-child {
+  flex: 1;
+  box-shadow: 15px 0px 10px -15px #111111;
+
+}
+
+.home_col:last-child {
+  flex: 4;
+  padding: 10px 30px;
+}
+
+.side_group {
+  margin: 20px 0;
+  padding: 0 10px;
+}
+
+.side_group a {
+  position: relative;
+  font-size: 18px;
+}
+
+.side_group a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.5s cubic-bezier(0, 0, 0.44, 1.1);
+}
+
+.side_group a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.active {
+  color: red;
+}
+
+
+.dashboard_groups {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.dashboard_group {
+  width: 200px;
+  min-height: 200px;
+  box-shadow: 0 0 5px #b3b3b3;
+  border-radius: 10px;
+}
+
+.dash_group_body {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dash_title {
+  font-size: 50px;
+  align-items: center;
+}
+
+.dash_group_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111111;
+  color: #eeeeee;
+  height: 20%;
+}
+
+.dash_subtitle {
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ab_title {
+  margin-bottom: 50px;
+  margin-top: 20px;
+  color: #111111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ab_col {
+  display: flex;
+  justify-content: center;
+}
+
+.ab_div {
+  width: 70%;
+}
+
+.ab_blogs {
+  margin-bottom: 50px;
+}
+
+.all_group {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #b3b3b3;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.filter-pagination {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.filter-pagination li {
+  cursor: pointer;
+  border: 1px solid #00000060;
+  margin-left: 5px;
+}
+
+.filter-pagination li a {
+  padding: 5px 15px;
+}
+
+
+.filter-pagination li:hover {
+  background-color: black;
+  color: white;
+}
+
+
+.pagi-active {
+  background-color: #000000;
+}
+
+.pagi-active-link {
+  color: white;
+}
+
+.disabledPagi {
+  cursor: not-allowed !important;
+  background-color: #bbbbbb;
+  color: black;
+}
+
+.all_right i {
+  margin-left: 20px;
+  transition: all 0.2s;
+}
+
+.all_right i:first-child {
+  color: red;
+}
+
+.all_right i:last-child {
+  color: green;
+}
+
+.all_right i:hover {
+  color: yellow
+}
+
+.popup_container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background-color: #0000001e;
+}
+
+.popup_title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.popup_groups {
+  width: 700px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.popup_group.view {
+  padding: 0 15px 15px 15px;
+}
+
+.popup_group.view label {
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+  color: #00000060;
+}
+
+.popup_group.view p {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 1.3px;
+  line-height: 20px;
+}
+
+
+.popup_container form {
+  width: 500px;
+  background-color: #ffffff;
+  padding: 30px 10px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup_container form .form_group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup_container form .form_group label {
+  margin-bottom: 5px;
+}
+
+.popup_container form .form_group input {
+  height: 40px;
+  border: 1px solid #2f5f74;
+  padding: 5px 15px;
+  outline: none;
+  color: #ca2734;
+}
+
+.popup_container form .form_group textarea {
+  border: 1px solid #2f5f74;
+  padding: 5px 15px;
+  outline: none;
+  color: #ca2734;
+}
+
+.close_form {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -15px;
+  top: -15px;
+  width: 35px;
+  height: 35px;
+  background-color: #ca2734;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popup_btn button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px 15px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 3px #000000;
+  transition: all 0.5s;
+}
+
+.popup_btn button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.no_data {
+  text-align: center;
+}
+
+.addb_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addb_form {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.addb_form .form_group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.addb_form .form_group label {
+  margin-bottom: 5px;
+}
+
+.addb_form .form_group input {
+  padding: 10px 0;
+}
+
+
+.popup_image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.popup_image .item {
+  margin-right: 10px;
+  border: 1px solid black;
+  padding: 3px 5px;
+}
+
+.popup_image img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.viewproduct {
+  font-size: 14px !important;
+}
+
+.edit_product form {
+  width: 900px;
+}
+
+ .popup_groups1 {
+  display: flex;
+  font-size: 14px;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.add_title{
+  text-align: center;
+  margin: 20px 50px;
+}
+
+.add_groups{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.add_groups .form_group{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.add_groups .form_group label{
+  margin-bottom: 10px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.add_groups .form_group input{
+  padding: 10px 0;
+  width: 300px;
+  color: red;
+}
+
+.add_groups .form_group textarea{
+  color: red;
+}
+
+.add_btn button{
+  background-color: #000000;
+  color: white;
+  padding: 5px 15px;
+  display: block;
+  margin: 0 auto;
+}
+
+.add_btn button:hover{
+  background-color: white;
+  color: black;
+}
+
+.form_groupAdd .btn_add{
+  background-color: green;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  display: block;
+  margin: 15px auto 0 auto;
+}
+
+.form_groupAdd .btn_add:hover{
+  background-color: white;
+  color: green;
+  border: 1px solid green;
+}
+
+.d_flexAdd{
+  display: flex;
+  gap: 5px;
+} 
+
+
+.d_flexAdd .btn_remove{
+  background-color: blue;
+  color: white;
+  padding: 5px 5px;
+  display: block;
+  margin: 15px auto 0 auto;
+}
+
+.d_flexAdd .btn_remove:hover{
+  background-color: white;
+  color: blue;
+
+}
+

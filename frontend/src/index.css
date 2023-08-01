@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face{
+  font-family: Roboto-Regular;
+  src: url(../public/assets/fonts/Roboto-Regular.ttf);
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+
+input{
+  font-family: Roboto-Regular;
+}
+
+button{
+  cursor: pointer;
+  font-family: Roboto-Regular;
+}
+.wrapper{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+
+body{
+  font-family: Roboto-Regular;
+}
+ main{
+  padding: 10px 15px;
+}
+
+::selection{
+  background-color: beige;
+}
+
+
